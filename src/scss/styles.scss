@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+//this is a global scss, each component will have
+//a scss file that will import base/_base
+// use spacing for padding and margin
+// use mixins for functions
+@import "base/_base";
+
+
+//some dummy code to showcase mixins
+.box {
+    background-color: $color4;
+    padding: $spacing-normal;
+    
+    > p {
+        margin: 0;
+    }
+}
+
+.rounded-box {
+    @extend .box;
+    //using multi values if needed 24px,32px,2px,1px look at @mixins
+    @include vendor(border-radius, $spacing-largest);
+}

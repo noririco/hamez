@@ -1,0 +1,25 @@
+@import "base.settings";
+@import "base.mixins";
+@import "base.fonts";
+@import "base.pallete";
+@import "base.theme";
+
+
+//Top-Level of Base system
+//defaults are here
+body {
+    line-height: $base-line-height;
+    font-size: $font-largest;
+    background-color: $color6;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: $font-weight-heading;
+}
+
+h1 { font-size: $header-size-1; }
+h2 { font-size: $header-size-2; }
+h3 { font-size: $header-size-3; }
+h4 { font-size: $header-size-4; }
+h5 { font-size: $header-size-5; }
+h6 { font-size: $header-size-6; }

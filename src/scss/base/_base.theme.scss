@@ -1,0 +1,13 @@
+// set a theme
+@import "base.mixins";
+
+html {
+    background: $color1;
+}
+
+a {
+    color: $color2;
+    @include hocus() {
+        color: $color1;
+    }
+}

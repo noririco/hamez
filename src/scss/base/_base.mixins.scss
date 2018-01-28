@@ -1,0 +1,21 @@
+// MANY VALUES
+// @mixin vendor($property, $value...) {
+//     -webkit-#{$property}: nth($value,1);
+//     -moz-#{$property}: nth($value,2);
+//     -ms-#{$property}: nth($value,3);
+//     #{$property}: nth($value,4);
+// }
+// ONLY ONE VALUE
+@mixin vendor($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    #{$property}: $value;
+}
+
+// focus + hover mixin
+@mixin hocus() {
+    &:hover, &:focus {
+        @content;
+    }
+}
